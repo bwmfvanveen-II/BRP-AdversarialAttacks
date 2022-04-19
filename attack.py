@@ -7,6 +7,8 @@ from advertorch.attacks import CarliniWagnerL2Attack, PGDAttack
 
 from nets import Net2Conv, Net4Conv
 
+import common as comm
+
 
 class MSAttack(object):
 
