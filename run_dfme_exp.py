@@ -56,7 +56,7 @@ def get_args(dataset, cuda):
 
 
 if __name__ == '__main__':
-    args = get_args(dataset="mnist", cuda=False, expt="attack", l_only=False)
+    args = get_args(dataset="mnist", cuda=False)
     print(args)
 
     print("Data free model stealing experiments:")
