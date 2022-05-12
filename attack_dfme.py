@@ -10,6 +10,8 @@ class DFMEAttack(MSAttack):
 
         self.z_dim = args.z_dim
 
+        self.device = torch.device("cuda:0" if self.args.cuda else "cpu")
+
     def set_netG(self):
         if self.args.dataset == 'MNIST':
             self.netG = NetGenMnist(z_dim=self.z_dim).to(self.device)
@@ -34,7 +36,6 @@ class DFMEAttack(MSAttack):
         torch.save(self.netS.state_dict(), path_s + "_start.pth")
         torch.save(self.netG.state_dict(), path_g + "_start.pth")
 
-        best_acc = 0
         for epoch in range(self.args.epoch_dg):
             print("***********************")
             print("global epoch: %d/%d" % (epoch + 1, self.args.epoch_dg))
@@ -50,27 +51,12 @@ class DFMEAttack(MSAttack):
                         else:
                             noise = torch.randn(self.args.batch_size_g, self.z_dim).cpu()
 
-                    if self.args.l_only:
-                        x_query = self.netG(noise)
-                        s_output = self.netS(x_query)
-                        # s_output_p = F.softmax(s_output, dim=1)
+                    x_query = self.netG(noise)
+                    approx_grad_wrt_x, loss_g, q_num = estimate_gradient(self.args, self.msd.netV, self.netS, x_query, loss_type="l1")
 
-                        with torch.no_grad():
-                            v_output = self.msd.netV(x_query)
-                            v_output_p = F.softmax(v_output, dim=1)
-                            v_confidence, v_predicted = torch.max(v_output_p, 1)
+                    x_query.backward(approx_grad_wrt_x)
 
-                        loss_g = - ce_criterion(s_output, v_predicted)
-
-                        loss_g.backward()
-                        optimizer_g.step()
-                    else:
-                        x_query = self.netG(noise, no_act=True)
-                        approx_grad_wrt_x, loss_g, q_num = estimate_gradient(self.args, self.msd.netV, self.netS, x_query, loss_type="l1")
-
-                        x_query.backward(approx_grad_wrt_x)
-
-                        optimizer_g.step()
+                    optimizer_g.step()
 
                     if e_iter == self.args.epoch_itrs - 1:
                         print("loss_g:", loss_g.cpu().detach().numpy())
@@ -92,16 +78,10 @@ class DFMEAttack(MSAttack):
                         v_output = self.msd.netV(x_query)
                         v_output_p = F.softmax(v_output, dim=1)
 
-                    if self.args.l_only:
-                        v_confidence, v_predicted = torch.max(v_output_p, 1)
-                        loss_s = ce_criterion(s_output, v_predicted)
-                    else:
-                        v_logit = v_output
-                        v_logit = F.log_softmax(v_logit, dim=1).detach()
-                        v_logit -= v_logit.mean(dim=1).view(-1, 1).detach()
-                        loss_s = F.l1_loss(s_output, v_logit)
-
-                        # loss_s = self.ce_loss(s_output_p, v_output_p)
+                    v_logit = v_output
+                    v_logit = F.log_softmax(v_logit, dim=1).detach()
+                    v_logit -= v_logit.mean(dim=1).view(-1, 1).detach()
+                    loss_s = F.l1_loss(s_output, v_logit)
 
                     loss_s.backward()
                     optimizer_s.step()

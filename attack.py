@@ -106,7 +106,7 @@ class MSAttack(object):
                 optimizer_s.step()
 
                 if i % 200 == 0:
-                    print("batch idx:", i, "loss_s:", loss_s.detach().numpy())
+                    print("batch idx:", i, "loss_s:", loss_s.detach().cpu().numpy())
 
         torch.save(self.netS.state_dict(), path_s)
         print("Finished training of netS")

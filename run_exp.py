@@ -32,7 +32,7 @@ if __name__ == '__main__':
     sys.stdout = Logger('ms_attack.log', sys.stdout)
 
     args = argparse.ArgumentParser()
-    args.add_argument('--cuda', default=False, action='store_true', help='using cuda')
+    args.add_argument('--cuda', default=True, action='store_true', help='using cuda')
     args.add_argument('--dataset', type=str, default='MNIST')
     args.add_argument('--num_class', type=int, default=10)
 
