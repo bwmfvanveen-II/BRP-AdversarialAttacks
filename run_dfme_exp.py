@@ -29,7 +29,7 @@ def run_dfme(args):
     msa.attack("FGSM")
 
 
-def get_args(dataset, cuda, expt="attack", l_only=False):
+def get_args(dataset, cuda):
     args = argparse.ArgumentParser()
 
     args.add_argument('--cuda', default=cuda, action='store_true', help='using cuda')
