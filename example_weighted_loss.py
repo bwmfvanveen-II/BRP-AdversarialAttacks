@@ -86,6 +86,6 @@ class WeightedLossExample(object):
 
 if __name__ == '__main__':
     wle_obj = WeightedLossExample()
-    # wle_obj.train()
-    wle_obj.test()
+    wle_obj.train()
+    # wle_obj.test()
 
