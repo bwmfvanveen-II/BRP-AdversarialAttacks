@@ -1,0 +1,501 @@
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.0001
+z_dim: 128
+Step timings: [0.08, 0.4, 0.9], and scale: 0.3
+Final student accuracy: 95.14%
+Total time taken to run: 112.87030053138733 seconds 
+
+Number of epochs taken to achieve this result: 31
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.0001
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 95.27%
+Total time taken to run: 82.85121870040894 seconds 
+
+Number of epochs taken to achieve this result: 22
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.0001
+z_dim: 128
+Step timings: [0.12, 0.6, 0.9], and scale: 0.3
+Final student accuracy: 95.37%
+Total time taken to run: 91.62724232673645 seconds 
+
+Number of epochs taken to achieve this result: 22
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.0002
+z_dim: 128
+Step timings: [0.08, 0.4, 0.9], and scale: 0.3
+Final student accuracy: 95.54%
+Total time taken to run: 102.18063497543335 seconds 
+
+Number of epochs taken to achieve this result: 21
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.0002
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 95.9%
+Total time taken to run: 160.42742538452148 seconds 
+
+Number of epochs taken to achieve this result: 25
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.0002
+z_dim: 128
+Step timings: [0.12, 0.6, 0.9], and scale: 0.3
+Final student accuracy: 95.05%
+Total time taken to run: 112.98628807067871 seconds 
+
+Number of epochs taken to achieve this result: 16
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.0003
+z_dim: 128
+Step timings: [0.08, 0.4, 0.9], and scale: 0.3
+Final student accuracy: 95.25%
+Total time taken to run: 130.98232746124268 seconds 
+
+Number of epochs taken to achieve this result: 20
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.0003
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 95.66%
+Total time taken to run: 80.7171220779419 seconds 
+
+Number of epochs taken to achieve this result: 13
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.0003
+z_dim: 128
+Step timings: [0.12, 0.6, 0.9], and scale: 0.3
+Final student accuracy: 95.72%
+Total time taken to run: 119.88698625564575 seconds 
+
+Number of epochs taken to achieve this result: 20
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.0004
+z_dim: 128
+Step timings: [0.08, 0.4, 0.9], and scale: 0.3
+Final student accuracy: 95.04%
+Total time taken to run: 90.24072670936584 seconds 
+
+Number of epochs taken to achieve this result: 13
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.0004
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 95.64%
+Total time taken to run: 52.02216863632202 seconds 
+
+Number of epochs taken to achieve this result: 7
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.0004
+z_dim: 128
+Step timings: [0.12, 0.6, 0.9], and scale: 0.3
+Final student accuracy: 95.27%
+Total time taken to run: 57.150768995285034 seconds 
+
+Number of epochs taken to achieve this result: 8
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0035
+Learning rate of G: 0.0001
+z_dim: 128
+Step timings: [0.08, 0.4, 0.9], and scale: 0.3
+Final student accuracy: 95.18%
+Total time taken to run: 81.14288592338562 seconds 
+
+Number of epochs taken to achieve this result: 12
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0035
+Learning rate of G: 0.0001
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 95.2%
+Total time taken to run: 217.68638134002686 seconds 
+
+Number of epochs taken to achieve this result: 34
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0035
+Learning rate of G: 0.0001
+z_dim: 128
+Step timings: [0.12, 0.6, 0.9], and scale: 0.3
+Final student accuracy: 95.14%
+Total time taken to run: 132.64182257652283 seconds 
+
+Number of epochs taken to achieve this result: 20
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0035
+Learning rate of G: 0.0002
+z_dim: 128
+Step timings: [0.08, 0.4, 0.9], and scale: 0.3
+Final student accuracy: 95.27%
+Total time taken to run: 123.25565767288208 seconds 
+
+Number of epochs taken to achieve this result: 17
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0035
+Learning rate of G: 0.0002
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 95.31%
+Total time taken to run: 117.08066725730896 seconds 
+
+Number of epochs taken to achieve this result: 17
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0035
+Learning rate of G: 0.0002
+z_dim: 128
+Step timings: [0.12, 0.6, 0.9], and scale: 0.3
+Final student accuracy: 95.11%
+Total time taken to run: 174.25541758537292 seconds 
+
+Number of epochs taken to achieve this result: 24
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0035
+Learning rate of G: 0.0003
+z_dim: 128
+Step timings: [0.08, 0.4, 0.9], and scale: 0.3
+Final student accuracy: 95.67%
+Total time taken to run: 79.98547267913818 seconds 
+
+Number of epochs taken to achieve this result: 11
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0035
+Learning rate of G: 0.0003
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 95.12%
+Total time taken to run: 89.58145570755005 seconds 
+
+Number of epochs taken to achieve this result: 12
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0035
+Learning rate of G: 0.0003
+z_dim: 128
+Step timings: [0.12, 0.6, 0.9], and scale: 0.3
+Final student accuracy: 95.85%
+Total time taken to run: 123.83300161361694 seconds 
+
+Number of epochs taken to achieve this result: 17
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0035
+Learning rate of G: 0.0004
+z_dim: 128
+Step timings: [0.08, 0.4, 0.9], and scale: 0.3
+Final student accuracy: 96.03%
+Total time taken to run: 112.32244157791138 seconds 
+
+Number of epochs taken to achieve this result: 17
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0035
+Learning rate of G: 0.0004
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 95.83%
+Total time taken to run: 117.80398535728455 seconds 
+
+Number of epochs taken to achieve this result: 17
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0035
+Learning rate of G: 0.0004
+z_dim: 128
+Step timings: [0.12, 0.6, 0.9], and scale: 0.3
+Final student accuracy: 95.98%
+Total time taken to run: 66.14004826545715 seconds 
+
+Number of epochs taken to achieve this result: 9
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.006
+Learning rate of G: 0.0001
+z_dim: 128
+Step timings: [0.08, 0.4, 0.9], and scale: 0.3
+Final student accuracy: 76.37%
+Total time taken to run: 340.14883255958557 seconds 
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.006
+Learning rate of G: 0.0001
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 90.89%
+Total time taken to run: 353.4922981262207 seconds 
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.006
+Learning rate of G: 0.0001
+z_dim: 128
+Step timings: [0.12, 0.6, 0.9], and scale: 0.3
+Final student accuracy: 25.52%
+Total time taken to run: 342.65597581863403 seconds 
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.006
+Learning rate of G: 0.0002
+z_dim: 128
+Step timings: [0.08, 0.4, 0.9], and scale: 0.3
+Final student accuracy: 93.79%
+Total time taken to run: 326.92207741737366 seconds 
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.006
+Learning rate of G: 0.0002
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 95.3%
+Total time taken to run: 223.74528241157532 seconds 
+
+Number of epochs taken to achieve this result: 36
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.006
+Learning rate of G: 0.0002
+z_dim: 128
+Step timings: [0.12, 0.6, 0.9], and scale: 0.3
+Final student accuracy: 93.41%
+Total time taken to run: 322.74125027656555 seconds 
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.006
+Learning rate of G: 0.0003
+z_dim: 128
+Step timings: [0.08, 0.4, 0.9], and scale: 0.3
+Final student accuracy: 95.01%
+Total time taken to run: 139.892746925354 seconds 
+
+Number of epochs taken to achieve this result: 28
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.006
+Learning rate of G: 0.0003
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 95.4%
+Total time taken to run: 59.1113715171814 seconds 
+
+Number of epochs taken to achieve this result: 12
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.006
+Learning rate of G: 0.0003
+z_dim: 128
+Step timings: [0.12, 0.6, 0.9], and scale: 0.3
+Final student accuracy: 95.53%
+Total time taken to run: 83.61307764053345 seconds 
+
+Number of epochs taken to achieve this result: 15
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.006
+Learning rate of G: 0.0004
+z_dim: 128
+Step timings: [0.08, 0.4, 0.9], and scale: 0.3
+Final student accuracy: 95.03%
+Total time taken to run: 189.08763766288757 seconds 
+
+Number of epochs taken to achieve this result: 32
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.006
+Learning rate of G: 0.0004
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 95.4%
+Total time taken to run: 79.14864420890808 seconds 
+
+Number of epochs taken to achieve this result: 15
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.006
+Learning rate of G: 0.0004
+z_dim: 128
+Step timings: [0.12, 0.6, 0.9], and scale: 0.3
+Final student accuracy: 64.75%
+Total time taken to run: 316.30832266807556 seconds 
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0085
+Learning rate of G: 0.0001
+z_dim: 128
+Step timings: [0.08, 0.4, 0.9], and scale: 0.3
+Final student accuracy: 58.48%
+Total time taken to run: 263.5231623649597 seconds 
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0085
+Learning rate of G: 0.0001
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 31.23%
+Total time taken to run: 304.5684235095978 seconds 
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0085
+Learning rate of G: 0.0001
+z_dim: 128
+Step timings: [0.12, 0.6, 0.9], and scale: 0.3
+Final student accuracy: 9.74%
+Total time taken to run: 243.5980100631714 seconds 
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0085
+Learning rate of G: 0.0002
+z_dim: 128
+Step timings: [0.08, 0.4, 0.9], and scale: 0.3
+Final student accuracy: 77.99%
+Total time taken to run: 274.0771951675415 seconds 
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0085
+Learning rate of G: 0.0002
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 83.14%
+Total time taken to run: 243.49549436569214 seconds 
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0085
+Learning rate of G: 0.0002
+z_dim: 128
+Step timings: [0.12, 0.6, 0.9], and scale: 0.3
+Final student accuracy: 9.74%
+Total time taken to run: 240.12467312812805 seconds 
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0085
+Learning rate of G: 0.0003
+z_dim: 128
+Step timings: [0.08, 0.4, 0.9], and scale: 0.3
+Final student accuracy: 33.69%
+Total time taken to run: 247.667813539505 seconds 
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0085
+Learning rate of G: 0.0003
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 72.29%
+Total time taken to run: 227.08401560783386 seconds 
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0085
+Learning rate of G: 0.0003
+z_dim: 128
+Step timings: [0.12, 0.6, 0.9], and scale: 0.3
+Final student accuracy: 10.28%
+Total time taken to run: 252.0210657119751 seconds 
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0085
+Learning rate of G: 0.0004
+z_dim: 128
+Step timings: [0.08, 0.4, 0.9], and scale: 0.3
+Final student accuracy: 92.62%
+Total time taken to run: 223.25955939292908 seconds 
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0085
+Learning rate of G: 0.0004
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 30.99%
+Total time taken to run: 244.4107165336609 seconds 
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0085
+Learning rate of G: 0.0004
+z_dim: 128
+Step timings: [0.12, 0.6, 0.9], and scale: 0.3
+Final student accuracy: 95.15%
+Total time taken to run: 117.52310395240784 seconds 
+
+Number of epochs taken to achieve this result: 27
+-----------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------
+This is the set of optimal data for the grid of results:
+Grid of student learning rates: [0.001, 0.0035, 0.006, 0.0085]
+Grid of generator learning rates: [0.0001, 0.0002, 0.0003, 0.0004]
+Grid of step timings: [[0.08, 0.4, 0.9], [0.1, 0.5, 0.9], [0.12, 0.6, 0.9]]
+Grid of scales used: [0.3]
+The optimal set of hyperparameters were: 
+Dataset: MNIST
+Learning rate of S: 0.001
+Learning rate of G: 0.0004
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 95.64%
+Total time taken to run: 8657.446615219116 seconds 
+Total number of queries made: 3600000
+
+Number of epochs taken to achieve this result: 7
+-----------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------

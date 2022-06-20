@@ -1,0 +1,198 @@
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.0001
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 81.66
+Attack success rate: 58.85%
+Total time taken to run: 443.6357295513153seconds
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.0001
+z_dim: 128
+Step timings: [0.12, 0.6, 0.9], and scale: 0.3
+Final student accuracy: 90.81
+Attack success rate: 66.07%
+Total time taken to run: 314.7343101501465seconds
+
+Number of epochs taken to achieve this result: 36
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.0001
+z_dim: 128
+Step timings: [0.08, 0.4, 0.9], and scale: 0.3
+Final student accuracy: 91.15
+Attack success rate: 64.25999999999999%
+Total time taken to run: 302.60823607444763seconds
+
+Number of epochs taken to achieve this result: 32
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.00035
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 90.9
+Attack success rate: 55.05%
+Total time taken to run: 206.5755124092102seconds
+
+Number of epochs taken to achieve this result: 21
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.00035
+z_dim: 128
+Step timings: [0.12, 0.6, 0.9], and scale: 0.3
+Final student accuracy: 90.71
+Attack success rate: 60.11%
+Total time taken to run: 362.22767996788025seconds
+
+Number of epochs taken to achieve this result: 38
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.00035
+z_dim: 128
+Step timings: [0.08, 0.4, 0.9], and scale: 0.3
+Final student accuracy: 92.1
+Attack success rate: 59.11%
+Total time taken to run: 173.97173929214478seconds
+
+Number of epochs taken to achieve this result: 21
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.0006
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 90.29
+Attack success rate: 50.24%
+Total time taken to run: 162.66273546218872seconds
+
+Number of epochs taken to achieve this result: 20
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.0006
+z_dim: 128
+Step timings: [0.12, 0.6, 0.9], and scale: 0.3
+Final student accuracy: 90.9
+Attack success rate: 51.04%
+Total time taken to run: 390.0456488132477seconds
+
+Number of epochs taken to achieve this result: 46
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.0006
+z_dim: 128
+Step timings: [0.08, 0.4, 0.9], and scale: 0.3
+Final student accuracy: 90.87
+Attack success rate: 59.74%
+Total time taken to run: 193.86874675750732seconds
+
+Number of epochs taken to achieve this result: 22
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.00085
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 92.91
+Attack success rate: 56.73%
+Total time taken to run: 186.11574411392212seconds
+
+Number of epochs taken to achieve this result: 21
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.00085
+z_dim: 128
+Step timings: [0.12, 0.6, 0.9], and scale: 0.3
+Final student accuracy: 91.62
+Attack success rate: 54.98%
+Total time taken to run: 225.88095331192017seconds
+
+Number of epochs taken to achieve this result: 26
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.00085
+z_dim: 128
+Step timings: [0.08, 0.4, 0.9], and scale: 0.3
+Final student accuracy: 91.03
+Attack success rate: 56.06%
+Total time taken to run: 170.87021899223328seconds
+
+Number of epochs taken to achieve this result: 20
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.001
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 90.18
+Attack success rate: 50.64%
+Total time taken to run: 185.3427996635437seconds
+
+Number of epochs taken to achieve this result: 21
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.001
+z_dim: 128
+Step timings: [0.12, 0.6, 0.9], and scale: 0.3
+Final student accuracy: 93.89
+Attack success rate: 52.59%
+Total time taken to run: 189.47723031044006seconds
+
+Number of epochs taken to achieve this result: 22
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.001
+Learning rate of G: 0.001
+z_dim: 128
+Step timings: [0.08, 0.4, 0.9], and scale: 0.3
+Final student accuracy: 91.73
+Attack success rate: 47.7%
+Total time taken to run: 123.67819881439209seconds
+
+Number of epochs taken to achieve this result: 14
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0035
+Learning rate of G: 0.0001
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 89.48
+Attack success rate: 71.33%
+Total time taken to run: 433.10276055336seconds
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0035
+Learning rate of G: 0.0001
+z_dim: 128
+Step timings: [0.12, 0.6, 0.9], and scale: 0.3
+Final student accuracy: 90.93
+Attack success rate: 69.66%
+Total time taken to run: 361.54403734207153seconds
+
+Number of epochs taken to achieve this result: 39
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: mnist
+Learning rate of S: 0.0035
+Learning rate of G: 0.0001
+z_dim: 128
+Step timings: [0.08, 0.4, 0.9], and scale: 0.3
+Final student accuracy: 77.11
+Attack success rate: 65.28%
+Total time taken to run: 403.83196449279785seconds
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------

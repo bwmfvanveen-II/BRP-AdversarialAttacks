@@ -30,30 +30,44 @@ class MSAttack(object):
             transform = torchvision.transforms.Compose([torchvision.transforms.ToTensor()])
             test_set = torchvision.datasets.MNIST(root='dataset/', train=False, download=True, transform=transform)
             train_set = torchvision.datasets.MNIST(root='dataset/', train=True, download=True, transform=transform)
+            self.prepLoad(test_set, train_set, net_type, nets_path)
 
-            if net_type == "Net2Conv":
-                SNet = Net2Conv
-            else:
-                SNet = Net4Conv
+        elif self.args.dataset == "CIFAR10":
+            transform = torchvision.transforms.Compose([torchvision.transforms.ToTensor()])
+            test_set = torchvision.datasets.CIFAR10(root='dataset/', train=False, download=True, transform=transform)
+            train_set = torchvision.datasets.CIFAR10(root='dataset/', train=True, download=True, transform=transform)
+            self.prepLoad(test_set, train_set, net_type, nets_path)
 
-            if self.args.cuda:
-                self.netS = SNet().cuda()
-                map_location = lambda storage, loc: storage.cuda()
-            else:
-                self.netS = SNet().cpu()
-                map_location = 'cpu'
+        elif self.args.dataset == "FASHIONMNIST":
+            transform = torchvision.transforms.Compose([torchvision.transforms.ToTensor()])
+            test_set = torchvision.datasets.FashionMNIST(root='dataset/', train=False, download=True,
+                                                         transform=transform)
+            train_set = torchvision.datasets.FashionMNIST(root='dataset/', train=True, download=True,
+                                                          transform=transform)
+            self.prepLoad(test_set, train_set, net_type, nets_path)
 
-            self.netS = nn.DataParallel(self.netS)
-            if nets_path is not None:
-                state_dict2 = torch.load(nets_path, map_location=map_location)
-                self.netS.load_state_dict(state_dict2)
+    def prepLoad(self, test_set, train_set, net_type="Net2Conv", nets_path=None):
+        if net_type == "Net2Conv":
+            SNet = Net2Conv
+        else:
+            SNet = Net4Conv
 
-            self.test_loader = torch.utils.data.DataLoader(test_set, batch_size=500, num_workers=2)
-            self.train_loader = torch.utils.data.DataLoader(train_set, batch_size=50, shuffle=True, num_workers=2)
+        if self.args.cuda:
+            self.netS = SNet().cuda()
+            map_location = lambda storage, loc: storage.cuda()
+        else:
+            self.netS = SNet().cpu()
+            map_location = 'cpu'
 
-            print('Loading \'attack\' is done.')
-        if self.args.dataset == "CIFAR10":
-            print("Please extend the code to Cifar10 by yourself according to the existing MNIST example.")
+        self.netS = nn.DataParallel(self.netS)
+        if nets_path is not None:
+            state_dict2 = torch.load(nets_path, map_location=map_location)
+            self.netS.load_state_dict(state_dict2)
+
+        self.test_loader = torch.utils.data.DataLoader(test_set, batch_size=500, num_workers=2)
+        self.train_loader = torch.utils.data.DataLoader(train_set, batch_size=50, shuffle=True, num_workers=2)
+
+        print('Loading \'attack\' is done.')
 
     @staticmethod
     def cross_entropy(q, p):
@@ -166,11 +180,10 @@ class MSAttack(object):
                 total += labels.size(0)
                 correct += (predicted == labels).sum()
         print('Attack success rate of \'%s\': %.2f %%' % (method, (100 - 100. * float(correct) / total)))
+        return 100 - 100. * float(correct) / total
 
     @staticmethod
     def weights_init(m):
         class_name = m.__class__.__name__
         if class_name.find('Conv') != -1:
             m.weight.data = torch.where(m.weight.data > 0, m.weight.data, torch.zeros(m.weight.data.shape))
-
-

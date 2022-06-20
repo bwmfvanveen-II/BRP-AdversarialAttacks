@@ -1,3 +1,5 @@
+import torch.optim
+
 from attack import *
 from grad_approx import estimate_gradient
 from nets import NetGenMnist
@@ -15,16 +17,30 @@ class DFMEAttack(MSAttack):
     def set_netG(self):
         if self.args.dataset == 'MNIST':
             self.netG = NetGenMnist(z_dim=self.z_dim).to(self.device)
+        # if self.args.dataset == 'CIFAR10':
+        if self.args.dataset == 'FASHIONMNIST':
+            self.netG = NetGenMnist(z_dim=self.z_dim).to(self.device)
+        #     self.netG = NetGen(z_dim=self.z_dim).to(self.device)
 
-    def dfme_train_netS(self, path_s, path_g=None):
+    def dfme_train_netS(self, path_s, path_g=None, target_accuraccy=101):
         """
         Training the substitute net using DFME.
         """
         print("Starting training net S using \'DFME\'")
+
+        s_accuracies = list()
+        query_per_epoch = list()
+        query_accumulative = list()
+        num_queries = 0
+        prev_queries = 0
+        num_epochs = 0
+
         self.set_netG()
 
         optimizer_s = torch.optim.SGD(self.netS.parameters(), lr=self.args.lr_tune_s, momentum=0.9)
         optimizer_g = torch.optim.Adam(self.netG.parameters(), lr=self.args.lr_tune_g)
+        # for param in self.netG.parameters():
+        #     print(type(param.data), param.size())
 
         steps = sorted([int(step * self.args.epoch_dg) for step in self.args.steps])
         print("Learning rate scheduling at steps: ", steps)
@@ -33,8 +49,8 @@ class DFMEAttack(MSAttack):
 
         ce_criterion = nn.CrossEntropyLoss()
 
-        torch.save(self.netS.state_dict(), path_s + "_start.pth")
-        torch.save(self.netG.state_dict(), path_g + "_start.pth")
+        # torch.save(self.netS.state_dict(), path_s + "_start.pth")
+        # torch.save(self.netG.state_dict(), path_g + "_start.pth")
 
         for epoch in range(self.args.epoch_dg):
             print("***********************")
@@ -53,6 +69,9 @@ class DFMEAttack(MSAttack):
 
                     x_query = self.netG(noise)
                     approx_grad_wrt_x, loss_g, q_num = estimate_gradient(self.args, self.msd.netV, self.netS, x_query, loss_type="l1")
+
+                    num_queries += q_num
+
 
                     x_query.backward(approx_grad_wrt_x)
 
@@ -94,11 +113,25 @@ class DFMEAttack(MSAttack):
 
             # save results in lists
             acc = comm.accuracy(self.netS, 'netS', test_loader=self.test_loader, cuda=self.args.cuda)
+            s_accuracies.append(acc)
+
+            queries_this_epoch = num_queries - prev_queries
+            prev_queries = num_queries
+
+            query_per_epoch.append(queries_this_epoch)
+            query_accumulative.append(num_queries)
+
+            num_epochs += 1
+
+            if(acc >= target_accuraccy):
+                break
 
         # save the final model
-        torch.save(self.netS.state_dict(), path_s + "_over.pth")
-        torch.save(self.netG.state_dict(), path_g + "_over.pth")
+        # torch.save(self.netS.state_dict(), path_s + "_over.pth")
+        # torch.save(self.netG.state_dict(), path_g + "_over.pth")
         print("Finished training of netS")
+
+        return s_accuracies, query_per_epoch, query_accumulative, num_queries, num_epochs
 
     def ce_loss(self, q, p):
         return torch.mean(-torch.mean(p * torch.log(q+1e-8), dim=1))

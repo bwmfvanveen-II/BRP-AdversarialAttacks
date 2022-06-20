@@ -66,9 +66,59 @@ class MSDefense(object):
                 for i, path in enumerate(netb_plist, 0):
                     state_dict = torch.load(path, map_location=map_location)
                     self.netB_list[i].load_state_dict(state_dict)
-        if self.args.dataset == 'Cifar10':
+        elif self.args.dataset == 'Cifar10':
             print("Please extend the code to Cifar10 by yourself according to the existing MNIST example.")
+
+        elif self.args.dataset == 'FASHIONMNIST':
+            transform = torchvision.transforms.Compose([torchvision.transforms.ToTensor()])
+            test_set = torchvision.datasets.FashionMNIST(root='dataset/', train=False, download=True, transform=transform)
+            train_set = torchvision.datasets.FashionMNIST(root='dataset/', train=True, download=True, transform=transform)
+
+            data_list = [i for i in range(6000, 8000)]
+            sampler = torch.utils.data.sampler.SubsetRandomSampler(data_list)
+            self.test_loader = torch.utils.data.DataLoader(test_set, batch_size=500, sampler=sampler, num_workers=2)
+            self.train_loader = torch.utils.data.DataLoader(train_set, batch_size=50, shuffle=True, num_workers=2)
+
+            if self.args.cuda:
+                self.netV = Net3Conv().cuda()
+                if netb_plist is None:
+                    self.netB_list.append(Net3Conv().cuda())  # for training NetB
+                else:
+                    # for defense evaluation
+                    self.netB_list = []
+                    for c in range(len(netb_plist)):
+                        self.netB_list.append(Net3Conv().cuda())
+                map_location = lambda storage, loc: storage.cuda()
+            else:
+                self.netV = Net3Conv().cpu()
+                if netb_plist is None:
+                    self.netB_list.append(Net3Conv().cpu())  # for training NetB
+                else:
+                    # for defense evaluation
+                    self.netB_list = []
+                    for c in range(len(netb_plist)):
+                        self.netB_list.append(Net3Conv().cpu())
+                map_location = 'cpu'
+
+            self.netV = nn.DataParallel(self.netV)
+            if netv_path is not None:
+                state_dict = torch.load(netv_path, map_location=map_location)
+                # for key in state_dict.keys() :
+                #     print(key)
+                # print(netv_path, "ewrwer", state_dict.keys)
+                self.netV.load_state_dict(state_dict)
+            self.netV.eval()
+
+            for i in range(len(self.netB_list)):
+                self.netB_list[i] = nn.DataParallel(self.netB_list[i])
+
+            if netb_plist is not None:
+                for i, path in enumerate(netb_plist, 0):
+                    state_dict = torch.load(path, map_location=map_location)
+                    self.netB_list[i].load_state_dict(state_dict)
         print("Loading \'defense\' is done.")
+
+
 
     def train_netV(self, save_path):
         print("Starting training the victim net V")

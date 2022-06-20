@@ -43,6 +43,10 @@ def accuracy(net, net_name, test_loader, cuda=False, idx=0):
         #             print("accurate predicted:", predicted[ii], labels[ii])
 
     if net_name == 'netB':
-        print('Accuracy of netB_%d: %.2f %%' % (idx, 100. * float(correct) / total))
+        acc = 100. * float(correct) / total
+        print('Accuracy of netB_%d: %.2f %%' % (idx, acc))
+        return acc
     else:
-        print('Accuracy of %s: %.2f %%' % (net_name, 100. * float(correct) / total))
+        acc = 100. * float(correct) / total
+        print('Accuracy of %s: %.2f %%' % (net_name, acc))
+        return acc

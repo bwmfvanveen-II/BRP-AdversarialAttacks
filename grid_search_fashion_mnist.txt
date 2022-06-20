@@ -1,0 +1,50 @@
+Dataset: fashion_mnist
+Learning rate of S: 0.01
+Learning rate of G: 0.0001
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 12.98%
+Total time taken to run: 1204.467553138733 seconds 
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: fashion_mnist
+Learning rate of S: 0.01
+Learning rate of G: 0.0001
+z_dim: 128
+Step timings: [0.2, 0.6, 0.9], and scale: 0.3
+Final student accuracy: 37.47%
+Total time taken to run: 1115.2529776096344 seconds 
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: fashion_mnist
+Learning rate of S: 0.01
+Learning rate of G: 0.0001
+z_dim: 128
+Step timings: [0.3, 0.7, 0.9], and scale: 0.3
+Final student accuracy: 27.03%
+Total time taken to run: 1085.1953814029694 seconds 
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: fashion_mnist
+Learning rate of S: 0.01
+Learning rate of G: 0.001
+z_dim: 128
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+Final student accuracy: 23.88%
+Total time taken to run: 1111.4235837459564 seconds 
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: fashion_mnist
+Learning rate of S: 0.01
+Learning rate of G: 0.001
+z_dim: 128
+Step timings: [0.2, 0.6, 0.9], and scale: 0.3
+Final student accuracy: 36.07%
+Total time taken to run: 1221.0887398719788 seconds 
+
+Number of epochs taken to achieve this result: 50
+-----------------------------------------------------------------------------------------------------------------------

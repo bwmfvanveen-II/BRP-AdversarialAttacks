@@ -1,0 +1,140 @@
+Dataset: MNIST
+Learning rate of S: 0.01
+Learning rate of G: 0.0001
+z_dim: 128
+Number of epochs:8
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+epoch_ds_S: 5, and G: 1
+Total queries: 120000
+Attack success rate: 36.78%
+Total time taken to run: 63.814823150634766
+         accuracy  queries made  total queries made
+epoch 1      9.74       15000.0             15000.0
+epoch 2     10.47       15000.0             30000.0
+epoch 3     15.95       15000.0             45000.0
+epoch 4     23.32       15000.0             60000.0
+epoch 5     25.55       15000.0             75000.0
+epoch 6     29.06       15000.0             90000.0
+epoch 7     37.37       15000.0            105000.0
+epoch 8     41.13       15000.0            120000.0
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: MNIST
+Learning rate of S: 0.01
+Learning rate of G: 0.0001
+z_dim: 128
+Number of epochs:8
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+epoch_ds_S: 5, and G: 1
+Total queries: 120000
+Attack success rate: 35.94%
+Total time taken to run: 61.92660737037659
+         accuracy  queries made  total queries made
+epoch 1      9.74       15000.0             15000.0
+epoch 2     10.52       15000.0             30000.0
+epoch 3     15.59       15000.0             45000.0
+epoch 4     22.63       15000.0             60000.0
+epoch 5     25.41       15000.0             75000.0
+epoch 6     28.68       15000.0             90000.0
+epoch 7     37.30       15000.0            105000.0
+epoch 8     40.76       15000.0            120000.0
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: MNIST
+Learning rate of S: 0.01
+Learning rate of G: 0.0001
+z_dim: 128
+Number of epochs:8
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+epoch_ds_S: 5, and G: 1
+Total queries: 120000
+Attack success rate: 35.010000000000005%
+Total time taken to run: 60.96046233177185
+         accuracy  queries made  total queries made
+epoch 1      9.74       15000.0             15000.0
+epoch 2     10.65       15000.0             30000.0
+epoch 3     16.52       15000.0             45000.0
+epoch 4     23.39       15000.0             60000.0
+epoch 5     25.69       15000.0             75000.0
+epoch 6     28.06       15000.0             90000.0
+epoch 7     35.03       15000.0            105000.0
+epoch 8     38.57       15000.0            120000.0
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: MNIST
+Learning rate of S: 0.01
+Learning rate of G: 0.0001
+z_dim: 128
+Number of epochs:8
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+epoch_ds_S: 5, and G: 1
+Total queries: 120000
+Attack success rate: 34.53%
+Total time taken to run: 65.21690154075623
+         accuracy  queries made  total queries made
+epoch 1      9.74       15000.0             15000.0
+epoch 2     10.09       15000.0             30000.0
+epoch 3     16.60       15000.0             45000.0
+epoch 4     20.83       15000.0             60000.0
+epoch 5     23.26       15000.0             75000.0
+epoch 6     25.79       15000.0             90000.0
+epoch 7     31.89       15000.0            105000.0
+epoch 8     37.47       15000.0            120000.0
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: MNIST
+Learning rate of S: 0.01
+Learning rate of G: 0.0001
+z_dim: 128
+Number of epochs:8
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+epoch_ds_S: 5, and G: 1
+Total queries: 120000
+Attack success rate: 34.760000000000005%
+Total time taken to run: 65.82394170761108
+         accuracy  queries made  total queries made
+epoch 1      9.74       15000.0             15000.0
+epoch 2     10.29       15000.0             30000.0
+epoch 3     17.41       15000.0             45000.0
+epoch 4     19.80       15000.0             60000.0
+epoch 5     23.90       15000.0             75000.0
+epoch 6     26.04       15000.0             90000.0
+epoch 7     32.36       15000.0            105000.0
+epoch 8     37.30       15000.0            120000.0
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: MNIST
+Learning rate of S: 0.01
+Learning rate of G: 0.0001
+z_dim: 128
+Number of epochs:8
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+epoch_ds_S: 5, and G: 1
+Total queries: 120000
+Attack success rate: 44.15%
+Total time taken to run: 71.34290719032288
+         accuracy  queries made  total queries made
+epoch 1      9.74       15000.0             15000.0
+epoch 2     11.33       15000.0             30000.0
+epoch 3     18.34       15000.0             45000.0
+epoch 4     25.16       15000.0             60000.0
+epoch 5     31.93       15000.0             75000.0
+epoch 6     36.84       15000.0             90000.0
+epoch 7     44.19       15000.0            105000.0
+epoch 8     48.50       15000.0            120000.0
+-----------------------------------------------------------------------------------------------------------------------
+Dataset: MNIST
+Learning rate of S: 0.01
+Learning rate of G: 0.0001
+z_dim: 128
+Number of epochs:8
+Step timings: [0.1, 0.5, 0.9], and scale: 0.3
+epoch_ds_S: 5, and G: 1
+Total queries: 120000
+Attack success rate: 57.72%
+Total time taken to run: 60.39628744125366
+         accuracy  queries made  total queries made
+epoch 1     11.06       15000.0             15000.0
+epoch 2     23.08       15000.0             30000.0
+epoch 3     40.86       15000.0             45000.0
+epoch 4     55.49       15000.0             60000.0
+epoch 5     58.57       15000.0             75000.0
+epoch 6     62.14       15000.0             90000.0
+epoch 7     67.09       15000.0            105000.0
+epoch 8     67.20       15000.0            120000.0
+-----------------------------------------------------------------------------------------------------------------------
